@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Banner di Notifica</title>
+  <style>
+    .banner {
+      display: none; /* nascosto di default */
+      background-color: yellow; /* colore distintivo */
+      text-align: center; /* testo centrato */
+      padding: 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .banner.visibile {
+      display: block; 
+    }
+
+    .dark{
+      background-color: black;
+      color: white;
+       text-align: center; /* testo centrato */
+      padding: 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="banner" id="myBanner">
+    Questo è il banner di notifica!
+  </div>
+
+  
+  <script>
+
+    setTimeout(() => {
+      document.getElementById('myBanner').classList.add('visibile');
+    }, 2000);
+  </script>
+
+</body>
+</html>
