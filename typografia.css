@@ -5,3 +5,11 @@ font-size: 3rem;
 line-height: 2rem;
 color: blue;
 }
+
+a{
+color: red;
+text-decoration: none;}
+
+a:hover{
+color: green;
+text-decoration: underline;}
